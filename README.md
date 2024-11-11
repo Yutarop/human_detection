@@ -4,6 +4,7 @@
 ```bash
 $ cd ~/{ROS2_WORKSPACE}/src
 $ git clone https://github.com/Yutarop/human_detection.git
+$ pip install -r requirements.txt
 $ cd ~/{ROS2_WORKSPACE} && $ colcon build
 $ source ~/.bashrc
 ```
