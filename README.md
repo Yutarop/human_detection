@@ -31,3 +31,9 @@ x, y, z座標の情報でクラスタリングさせたい場合
 $ cd ~/{ROS2_WORKSPACE}/src/human_detection/display_pcd
 $ python3 display_cluster_2d.py
 ```
+## PCDファイルの作り方
+prefixはオプションなので付けなくても構いません。
+```bash
+$ git clone https://github.com/ros-perception/perception_pcl.git
+$ ros2 run pcl_ros pointcloud_to_pcd --ros-args -r input:=/(your-topic-name) -p prefix:=(Name prefixed to file)
+```
