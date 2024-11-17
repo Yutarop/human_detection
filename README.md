@@ -35,5 +35,6 @@ $ python3 display_cluster_2d.py
 prefixはオプションなので付けなくても構いません。
 ```bash
 $ git clone https://github.com/ros-perception/perception_pcl.git
+$ cd ~/{ROS2_WORKSPACE} && $ colcon build
 $ ros2 run pcl_ros pointcloud_to_pcd --ros-args -r input:=/(your-topic-name) -p prefix:=(Name prefixed to file)
 ```
